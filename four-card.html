@@ -98,6 +98,14 @@
       border-top: 3px solid hsl(212, 86%, 64%);
     }
 
+    .box-drop {
+      transform: translateY(50%);
+    }
+
+    @media (max-width: 775px) {
+      .box-drop {transform: translateY(0);}
+    }
+
   </style>
 
 </head>
@@ -116,7 +124,7 @@
 
       
       <div class="container">
-        <section id="left-box" class="box">
+        <section id="left-box" class="box box-drop">
           <h2>Supervisor</h2>
           <p>Monitors activity to identify project roadblocks</p>
           <img src="images/icon-supervisor.svg" alt="supervisor">
@@ -128,12 +136,12 @@
           <img src="images/icon-team-builder.svg" alt="teambuilder">
         </section>
         
-        <section id="right-box" class="box">
+        <section id="right-box" class="box box-drop">
           <h2>Calculator</h2>
           <p>Uses data from past projects to provide better delivery estimates</p>
           <img src="images/icon-calculator.svg" alt="Calculator">
         </section>
-        
+
         <section id="middle-bottom" class="box">
           <h2>Karma</h2>
          <p>Regularly evaluates our talent to ensure quality</p>
